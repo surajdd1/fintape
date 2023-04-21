@@ -9,6 +9,7 @@ def links_r(url_string):
 	listToStr = ' '.join([str(elem) for elem in url_string])
 	# s = 'This is my tweet check it out http://tinyurl.com/blah and http://blabla.com'
 	s = re.findall(r'(https?://\S+)', listToStr)
+	return s
 	# print(s)
 	# replace the URL with the page you want to scrape
 	text =[]
